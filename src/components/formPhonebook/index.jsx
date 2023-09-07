@@ -8,8 +8,7 @@ class FormPhonebook extends Component {
     number: '',
   };
 
-  handleInputChange = evt => {
-    const { name, value } = evt.target;
+  handleInputChange = ({ target: { name, value } }) => {
     this.setState({ [name]: value });
   };
 

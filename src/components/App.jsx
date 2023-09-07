@@ -55,8 +55,8 @@ class App extends Component {
     }));
   };
 
-  changeFilter = e => {
-    this.setState({ filter: e.target.value });
+  changeFilter = ({ target: { value } }) => {
+    this.setState({ filter: value });
   };
 
   render() {
